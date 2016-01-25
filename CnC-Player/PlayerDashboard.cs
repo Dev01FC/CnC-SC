@@ -20,7 +20,7 @@ namespace CnC_Player
 
         private const string FBPATHPRIVATE = "https://codeandconquer.firebaseio.com/private/";
         private const string FBPATHPUBLIC = "https://codeandconquer.firebaseio.com/public/";
-        private const string SETTINGSPATH = @"C:\Users\Frank\Settings\";
+        private const string SETTINGSPATH = @"C:\Users\Frank\Settings\Player\";
         private Player me;
         private PictureBox[,] mapTilePictures;
 
@@ -273,6 +273,12 @@ namespace CnC_Player
 
                 // Asynchronous
                 CommandFeedback feedback = (CommandFeedback)fireObject;
+
+                //foreach (InstalledVoice voice in synthesizer.GetInstalledVoices())
+                //{
+                //    Debug.Print(voice.VoiceInfo.Name);
+                //}
+                //synthesizer.SelectVoice(synthesizer.GetInstalledVoices()[1].VoiceInfo.Name);
                 synthesizer.SpeakAsync(feedback.Feedback);
             }
             else if (fireObject.Path == "PlayerGame")
