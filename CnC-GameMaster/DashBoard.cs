@@ -20,7 +20,7 @@ namespace CnCGameMaster
         private  string FBPATHPRIVATE = "https://codeandconquer.firebaseio.com/private/";
         private  string FBPATHPUBLIC = "https://codeandconquer.firebaseio.com/public/";
 
-        private const string SETTINGSPATH = @"C:\Users\Frank\Settings\";
+        private const string SETTINGSPATH = @"C:\Users\Frank\Settings\Master\";
         private string SECRET = ""; //ur secret token
 
 
